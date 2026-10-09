@@ -1,0 +1,5 @@
+# Python dependencies for the translation pipeline (tools/).
+# Runtime hooks (mod/recomp) do NOT need Python — only the offline tools do.
+Pillow>=10.0
+numpy>=1.24
+opencv-python>=4.8

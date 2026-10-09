@@ -1,0 +1,57 @@
+# =====================================================================
+#  Regla de oro: NUNCA versionar assets del juego ni volcados derivados.
+# =====================================================================
+
+# --- Copias legales del juego (las aporta el usuario) ---
+roms/
+extract/
+dist/
+
+# --- Binarios / imagenes del juego ---
+*.iso
+*.bin
+*.xex
+*.pe
+default.xex
+
+# --- Payloads y volcados derivados del juego ---
+*.aif
+*.asf
+*.aaf
+*.acf
+*.snc
+*.mron
+*.msg
+*.atlas.png
+
+# --- Manifiestos / CSV generados ---
+*.csv
+
+# --- Backups de la tabla de traduccion ---
+translation/*.bak
+translation/es.*.json
+*.es.json.bak
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# --- Editores / SO ---
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+
+# --- Undub / material de terceros (no versionar) ---
+undub/
+
+# --- Datos del mod: SÍ se versionan (traducción preconstruida; el usuario
+#     final NO necesita Python).  Excepciones a las reglas de arriba. ---
+!mod/translation/*.aif
+!mod/translation/*.msg
+!mod/translation/*.bin
+!mod/translation/ui_textures.txt
+# audio mod data (inventory + dialogue-to-dub list; not game assets)
+!mod/audio/*.csv

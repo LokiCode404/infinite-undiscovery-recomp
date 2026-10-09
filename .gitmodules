@@ -1,0 +1,3 @@
+[submodule "tools/vendor/pc-infiniteundiscovery"]
+	path = tools/vendor/pc-infiniteundiscovery
+	url = https://github.com/vs-sr-dev/pc-infiniteundiscovery

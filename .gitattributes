@@ -1,0 +1,15 @@
+# Normaliza finales de línea: LF en el repo, salvo scripts de Windows.
+* text=auto eol=lf
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.sln text eol=crlf
+*.vcxproj text eol=crlf
+*.vcxproj.filters text eol=crlf
+
+# Binarios (normalmente ignorados, por si acaso)
+*.png binary
+*.dds binary
+*.iso binary
+*.bin binary
+*.aif binary
